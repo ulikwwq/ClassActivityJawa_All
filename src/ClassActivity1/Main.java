@@ -1,4 +1,4 @@
-import ClassActivity1.Child;
+package ClassActivity1;
 
 public class Main {
     public static void main(String[] args) {
