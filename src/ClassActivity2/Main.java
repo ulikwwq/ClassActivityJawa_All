@@ -1,16 +1,12 @@
-import java.util.Scanner;
+void main() {
+    Scanner sc = new Scanner(System.in);
+    Simple simple = new Simple(); // создаём объект Simple
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Simple simple = new Simple(); // создаём объект Simple
+    IO.print("Введите текст: ");
+    String text = sc.nextLine();
 
-        System.out.print("Введите текст: ");
-        String text = sc.nextLine();
+    IO.print("Введите окончание (например, ing): ");
+    String ending = sc.nextLine();
 
-        System.out.print("Введите окончание (например, ing): ");
-        String ending = sc.nextLine();
-
-        simple.findWords(text, ending); // вызываем метод
-    }
+    simple.findWords(text, ending); // вызываем метод
 }
